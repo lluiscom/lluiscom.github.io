@@ -68,7 +68,7 @@ body {
 .profile-img {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 40%;
     object-fit: cover;
     margin-bottom: 20px;
 }
