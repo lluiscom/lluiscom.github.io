@@ -1,24 +1,188 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pàgina amb capçalera i peu de pàgina</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Enllaça el CSS extern -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Capçalera de la pàgina</h1>
-    </header>
+  <body id="top" class="dark-mode">
 
-    <main>
-        <h2>Contingut principal</h2>
-        <p>Aquesta és una pàgina d'exemple amb capçalera i peu de pàgina.</p>
-    </main>
 
-    <footer>
-        <p>Peu de pàgina: Tots els drets reservats &copy; 2024</p>
-    </footer>
+  <!-- Profile Image with Anchor Point for ABOUT ME -->
+  <img src="foto2.png" class="profile-img" alt="User Image">
+
+  
+  <!-- Name and Title -->
+  <h1 class="profile-name">Hi, my name is Lluís Colomé</h1>
+  <p class="profile-title">Aspiring Computer Engineer with a Passion for Innovation</p>
+  <p class="profile-description">Designing sophisticated products focused on user experience testing and design thinking.</p>
+  
+  <!-- Profile Details -->
+  <div class="profile-description">
+    <p>I'm a 20-year-old computer engineering student with a strong drive to create meaningful technology that improves everyday life.
+      Currently studying at university, I am dedicated to expanding my expertise and continuously learning, with a particular interest in automation, web development,
+      and user-focused design. I bring a unique combination of technical skills and linguistic versatility to my work.</p>
+      <p>I am fluent in Catalan, Spanish, English, and simple German, this allows me to connect and collaborate across diverse teams and cultures.
+        My technical skill set includes web development with HTML, CSS, JavaScript, and frameworks like Bootstrap.
+        In addition, my experience with C and C++ has equipped me with a solid foundation in structured programming and object-oriented design,
+        essential for developing efficient, scalable software solutions.
+        Driven and ambitious, I am eager to apply my knowledge to real-world projects, pushing the boundaries of what technology can accomplish.
+        I am always open to new opportunities to learn, grow, and contribute to exciting ventures in the tech industry</p>
+        <p>Send me an email! <strong>lluiscomur3@gmail.com</strong></p>
+  </div>
+
+  <!-- Contact Button -->
+  <a href="https://www.linkedin.com/in/lluis-colome/" class="contact-button">CONTACT ME VIA LINKEDIN</a>
+
+<!-- Hamburger Menu Icon -->
+<div class="hamburger-menu" onclick="toggleDropdown()">
+  <!-- Icon with three horizontal bars -->
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</div>
+
+<!-- Full-Height Sidebar Menu -->
+<div id="dropdownContent" class="dropdown-content">
+  <div class="dropdown-header">Menu</div>
+  <a href="#top">ABOUT ME</a>
+  <a href="#my-skills">MY SKILLS</a>
+  <a href="#my-projects">MY PROJECTS</a>
+  
+ <!-- Static Footer Text and Social Media Icons -->
+<div class="menu-footer">
+  <p class="footer-text">Follow/Contact me!</p>
+  <div class="social-icons">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/lluis-colome/" target="_blank" class="social-link">
+      <span class="social-text">►LinkedIn&nbsp;&nbsp;&nbsp;</span>
+      <img src="images/linkedin-logo.png" alt="LinkedIn Logo" class="social-icon">
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://github.com/lluiscom" target="_blank" class="social-link">
+      <span class="social-text">►GitHub&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <img src="images/github-logo.png" alt="LinkedIn Logo" class="social-icon">
+    </a>
+
+    <!-- Twitter -->
+    <a href="https://x.com/univgirona" target="_blank" class="social-link">
+      <span class="social-text">►Twitter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <img src="images/twitter-logo.png" alt="Twitter Logo" class="social-icon">
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/lluisco__/" target="_blank" class="social-link">
+      <span class="social-text">►Instagram</span>
+      <img src="images/instagram-logo.png" alt="Instagram Logo" class="social-icon">
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/UdG.universitat" target="_blank" class="social-link">
+      <span class="social-text">►Facebook&nbsp;</span>
+      <img src="images/facebook-logo.png" alt="Facebook Logo" class="social-icon">
+    </a>
+  </div>
+</div>
+
+</div>
+<!-- MY SKILLS Section -->
+<h2 id="my-skills" class="section-heading"><b>My skills</b></h2>
+<div class="skills-list">
+  <div class="skill-item">
+    <img src="images/engineering.png"  width="100" height="100"><br>
+    <h3>Engineering &<br>Design</h3>
+    <p>Combining creativity and technical knowledge to design and build innovative solutions.</p>
+    <a href="https://www.linkedin.com/in/lluis-colome/">Explore more</a>
+  </div>
+  <div class="skill-item">
+    <div class="logo-stack">
+        <img src="images/c-logo.png" class="logo-c" width="100" height="100">
+        <img src="images/cpp-logo.png" class="logo-cpp" width="100" height="100">
+    </div>
+    <h3>C &<br>C++ Coding</h3>
+    <p>Proficient in C and C++ programming, with experience in object-oriented programming, data structures, and algorithms.</p>
+    <a href="https://www.linkedin.com/in/lluis-colome/">See projects</a>
+</div>
+
+<div class="skill-item">
+  <div class="logo-stack">
+      <img src="images/nodejs-logo.webp" class="logo-nodejs" width="100" height="100">
+      <img src="images/react-logo.png" class="logo-react" width="100">
+      <img src="images/js-logo.png" class="logo-js" width="100" height="100">
+  </div>
+  <h3>JavaScript &<br>Frameworks</h3>
+  <p>Experienced in JavaScript for interactive web development, working with both vanilla JavaScript and frameworks.</p>
+  <a href="https://github.com/lluiscom">Learn more</a>
+</div>
+
+  <div class="skill-item">
+    <img src="images/html5-logo.png" width="120">
+    <img src="images/css-logo.png" width="85"><br>
+    <h3>HTML/CSS &<br>Frameworks</h3>
+    <p>Skilled in building responsive layouts and styling with HTML, CSS, and Bootstrap, creating engaging and accessible web pages.</p>
+    <a href="https://github.com/lluiscom">View designs</a>
+  </div>
+</div>
+
+
+<!-- MY PROJECTS Section -->
+<h2 id="my-projects" class="section-heading">My Projects</h2>
+<div class="projects-container">
+  <!-- Project 1: KeyDrop_tool -->
+  <a href="https://github.com/lluiscom/KeyDrop_Tool" target="_blank" class="project-link">
+    <div class="card project-card">
+      <div class="card-header">
+        <img src="images/nodejs-logo.webp" alt="Node.js Logo" class="project-logo">
+        <h3 class="project-title-inline">KeyDrop_Tool</h3>
+      </div>
+      <div class="card-body">
+        <p class="project-description">
+          KeyDrop_tool is a web scraping and automation tool developed with Node.js and Puppeteer.
+          Designed to generate daily income, it facilitates and automates the claiming of daily bonuses
+          on KeyDrop.com, a virtual betting site for CSGO skins. Its features include claiming daily cases,
+          joining giveaways, and redeeming promotional codes almost automatically.
+        </p>
+      </div>
+    </div>
+  </a>
+
+<!-- Project 2: My Personal Website -->
+<a href="https://github.com/lluiscom/lluiscom.github.io" target="_blank" class="project-link">
+  <div class="card project-card website-card">
+    <div class="card-header">
+      <!-- Logos amb mides ajustades -->
+      <img src="images/css-logo.png" alt="CSS Logo" class="project-logo project-logo-small">
+      <img src="images/html5-logo.png" alt="HTML5 Logo" class="project-logo project-logo-large">
+      <img src="images/js-logo2.png" alt="JavaScript Logo" class="project-logo project-logo-small">
+      <h3 class="project-title-inline">My Personal Website</h3>
+    </div>
+    <div class="card-body">
+      <p class="project-description">
+        My Personal Website is a showcase of my web development skills, built with HTML5, CSS, and JavaScript.
+        This project focuses on responsive design and user experience, highlighting my expertise in creating
+        visually appealing and interactive web interfaces.
+      </p>
+    </div>
+  </div>
+</a>
+
+</div>
+
+  <!-- Barra lateral per al Mode Nocturn -->
+  <div class="sidebar" onclick="toggleDarkMode()">Light Theme</div>
+
+  <!-- Enllaça el JavaScript extern -->
+  <script src="script.js"></script>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
