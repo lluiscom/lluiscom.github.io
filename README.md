@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/npm/l/keydrop_tool.svg" alt="npm license">
 </p>
 
-# Lluís Colomé Portfolio
+# My Portfolio
 
 ## Project Analysis
 
