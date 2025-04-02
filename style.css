@@ -131,6 +131,7 @@ body {
   top: 0;
   left: 50px; /* Ajusta el desplazamiento horizontal */
   z-index: 1; /* Ponerlo en la capa superior */
+  opacity: 0.7; /* Opcional: hacer que el logo de C se vea un poco más tenue */
 }
 /* Contenedor de logos para superposición */
 .logo-stack {
@@ -164,7 +165,7 @@ body {
 /* Logo de Node.js detrás de JS y desplazado */
 .logo-nodejs {
   position: absolute;
-  top: 8px; /* Ajusta la posición vertical */
+  top: 65px; /* Ajusta la posición vertical */
   left: 70px; /* Ajusta la posición horizontal para que esté parcialmente visible */
   z-index: 2; /* Coloca el logo de Node.js en la capa inferior */
   opacity: 1; /* Opcional: cambia la opacidad si quieres que sea más tenue */
